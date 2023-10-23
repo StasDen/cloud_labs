@@ -15,7 +15,7 @@ import org.springframework.hateoas.server.core.Relation;
 public class PartyAnimatorDto extends RepresentationModel<PartyAnimatorDto> {
     private final Integer id;
     private final String firstName;
-    private final String secondName;
+    private final String lastName;
     private final String phoneNumber;
     private final String uniquePerformance;
     private final Integer workExperienceInYears;

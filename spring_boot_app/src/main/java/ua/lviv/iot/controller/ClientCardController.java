@@ -13,7 +13,7 @@ import ua.lviv.iot.domain.ClientCard;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/clientCards")
+@RequestMapping(value = "/api/client-cards")
 public class ClientCardController {
     @Autowired
     private ClientCardDtoAssembler clientCardDtoAssembler;

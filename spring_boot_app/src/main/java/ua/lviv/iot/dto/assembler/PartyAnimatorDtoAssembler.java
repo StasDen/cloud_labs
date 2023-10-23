@@ -15,7 +15,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class PartyAnimatorDtoAssembler implements RepresentationModelAssembler<PartyAnimator, PartyAnimatorDto> {
     @Override
     public PartyAnimatorDto toModel(PartyAnimator entity) {
-        PartyAnimatorDto partyAnimatorDto = PartyAnimatorDto.builder().id(entity.getId()).firstName(entity.getFirstName()).secondName(entity.getSecondName()).phoneNumber(entity.getPhoneNumber()).uniquePerformance(entity.getUniquePerformance()).workExperienceInYears(entity.getWorkExperienceInYears()).orderId(entity.getOrderId()).build();
+        PartyAnimatorDto partyAnimatorDto = PartyAnimatorDto.builder().id(entity.getId()).firstName(entity.getFirstName()).lastName(entity.getLastName()).phoneNumber(entity.getPhoneNumber()).uniquePerformance(entity.getUniquePerformance()).workExperienceInYears(entity.getWorkExperienceInYears()).orderId(entity.getOrderId()).build();
         Link selfLink = linkTo(methodOn(PartyAnimatorController.class).getPartyAnimator(entity.getId())).withSelfRel();
         partyAnimatorDto.add(selfLink);
         return partyAnimatorDto;

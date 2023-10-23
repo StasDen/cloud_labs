@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/partyAnimators")
+@RequestMapping(value = "/api/party-animators")
 public class PartyAnimatorController {
     @Autowired
     private PartyAnimatorService partyAnimatorService;

@@ -13,7 +13,7 @@ import ua.lviv.iot.domain.EntertainmentAgency;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/entertainmentAgencies")
+@RequestMapping(value = "/api/entertainment-agencies")
 public class EntertainmentAgencyController {
     @Autowired
     private EntertainmentAgencyService entertainmentAgencyService;

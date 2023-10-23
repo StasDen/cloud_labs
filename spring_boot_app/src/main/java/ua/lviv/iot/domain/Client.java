@@ -35,6 +35,6 @@ public class Client {
     private Integer clientCardId;
 
     @ManyToMany
-    @JoinTable(name = "client_ordering", schema = "my_library", joinColumns = @JoinColumn(name = "client_id", referencedColumnName = "id", nullable = false), inverseJoinColumns = @JoinColumn(name = "ordering_id", referencedColumnName = "id", nullable = false))
+    @JoinTable(name = "client_ordering", schema = "party_animators", joinColumns = @JoinColumn(name = "client_id", referencedColumnName = "id", nullable = false), inverseJoinColumns = @JoinColumn(name = "ordering_id", referencedColumnName = "id", nullable = false))
     private Set<Ordering> orderings;
 }

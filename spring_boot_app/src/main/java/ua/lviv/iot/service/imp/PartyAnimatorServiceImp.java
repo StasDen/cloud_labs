@@ -34,7 +34,7 @@ public class PartyAnimatorServiceImp implements PartyAnimatorService {
     public void update(Integer id, PartyAnimator uPartyAnimator) {
         PartyAnimator partyAnimator = partyAnimatorRepository.findById(id).orElseThrow(() -> new PartyAnimatorNotFoundException(id));
         partyAnimator.setFirstName(uPartyAnimator.getFirstName());
-        partyAnimator.setSecondName(uPartyAnimator.getSecondName());
+        partyAnimator.setLastName(uPartyAnimator.getLastName());
         partyAnimator.setPhoneNumber(uPartyAnimator.getPhoneNumber());
         partyAnimator.setUniquePerformance(uPartyAnimator.getUniquePerformance());
         partyAnimator.setWorkExperienceInYears(uPartyAnimator.getWorkExperienceInYears());
