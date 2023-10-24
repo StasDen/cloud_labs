@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'party-animators'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0CD42879A8A642F0A8099A2FCFCA4387 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D7B4200B3CC84BA786DF569D9728AFCA }}
           package: '*.war'
