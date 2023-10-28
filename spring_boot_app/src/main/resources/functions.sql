@@ -1,4 +1,4 @@
-USE party_animators;
+USE party_animators-database;
 
 DELIMITER //
 DROP FUNCTION IF EXISTS max_ordering_cost //

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: ${AZURE_DB_URL}
     username: ${AZURE_DB_USER}
     password: ${AZURE_DB_PASSWORD}

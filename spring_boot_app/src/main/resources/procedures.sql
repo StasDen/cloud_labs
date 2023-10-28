@@ -1,4 +1,4 @@
-USE party_animators;
+USE party_animators-database;
 
 DROP PROCEDURE IF EXISTS getOrderingsAfterCost;
 DELIMITER //
