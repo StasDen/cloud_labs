@@ -1,4 +1,4 @@
-name: Build and deploy JAR app to Azure Web App - best-party-animators
+name: Build and deploy on Azure
 
 on:
   push:
@@ -53,4 +53,4 @@ jobs:
           app-name: 'best-party-animators'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_20394C0526FE4F289E7E0E5608898F16 }}
-          package: '*.war'
+          package: '*.jar'
