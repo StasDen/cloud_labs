@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      AZURE_DB_URL: {{ secrets.AZURE_DB_URL }}
-      AZURE_DB_USER: {{ secrets.AZURE_DB_USER }}
-      AZURE_DB_PASSWORD: {{ secrets.AZURE_DB_PASSWORD }}
-  
+      AZURE_DB_URL: ${{ secrets.AZURE_DB_URL }}
+      AZURE_DB_USER: ${{ secrets.AZURE_DB_USER }}
+      AZURE_DB_PASSWORD: ${{ secrets.AZURE_DB_PASSWORD }}
+
     steps:
       - uses: actions/checkout@v4
 
